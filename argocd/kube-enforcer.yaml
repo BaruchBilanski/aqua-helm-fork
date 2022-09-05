@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/semyonmor/aqua-helm'
     path: kube-enforcer
-    targetRevision: '2022.4.71'
+    targetRevision: '2022.4.1'
     helm:
       parameters:
         - name: certsSecret.autoGenerate

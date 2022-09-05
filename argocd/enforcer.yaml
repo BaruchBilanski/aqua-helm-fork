@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://helm.aquasec.com/'
     chart: enforcer
-    targetRevision: 2022.4.71
+    targetRevision: 2022.4.1
     helm:
       parameters:
         - name: gate.host
@@ -17,7 +17,7 @@ spec:
         - name: gate.port
           value: '443'
         - name: platform
-          value: gke
+          value: k8s
         - name: image.tag
           value: 2022.4.71
   destination:

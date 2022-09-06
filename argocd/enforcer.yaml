@@ -12,10 +12,10 @@ spec:
     targetRevision: 2022.4.4
     helm:
       parameters:
-        - name: gate.host
-          value: aqua-lb
-        - name: gate.port
-          value: '443'
+        - name: global.gateway.address
+          value: server-gateway-svc.aqua
+        - name: global.gateway..port
+          value: '8443'
         - name: platform
           value: k8s
         - name: image.tag

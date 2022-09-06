@@ -16,7 +16,7 @@ spec:
           value: 'true'
         - name: gateway.address
           value: aqua-lb
-        - name: gateway.port
+        - name: global.gateway.port
           value: '443'
         - name: starboard.OPERATOR_CONCURRENT_SCAN_JOBS_LIMIT
           value: '2'

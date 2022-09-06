@@ -1,0 +1,30 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: aqua-enforcer
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: aqua
+  source:
+    repoURL: 'https://helm.aquasec.com/'
+    chart: server
+    targetRevision: 2022.4.4
+    helm:
+      parameters:
+        - name: platform
+          value: k8s
+        - name: image.tag
+          value: 2022.4.71
+        - name: serviceAccount.create
+          value: 'true'
+        - name: serviceAccount.name
+          value: 'aqua-sa'
+
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: aqua
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

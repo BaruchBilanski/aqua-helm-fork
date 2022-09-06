@@ -24,6 +24,8 @@ spec:
           value: 'true'
         - name: serviceAccount.name
           value: 'aqua-sa'
+        - name: image.tag
+          value: '2022.4.71'
 
   destination:
     server: 'https://kubernetes.default.svc'

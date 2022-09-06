@@ -20,6 +20,8 @@ spec:
           value: 'true'
         - name: serviceAccount.name
           value: 'aqua-sa'
+        - name: imageCredentials.create
+          value: 'false'
 
   destination:
     server: 'https://kubernetes.default.svc'

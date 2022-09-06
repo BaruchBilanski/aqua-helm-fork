@@ -22,6 +22,9 @@ spec:
           value: 2022.4.71
         - name: serviceAccount.create
           value: 'true'
+        - name: serviceAccount.name
+          value: 'aqua-sa'
+
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: aqua

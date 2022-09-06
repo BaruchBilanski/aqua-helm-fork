@@ -7,9 +7,9 @@ metadata:
 spec:
   project: aqua
   source:
-    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
-    path: kube-enforcer
-    targetRevision: '2022.4'
+    repoURL: 'https://helm.aquasec.com/'
+    chart: kube-enforcer
+    targetRevision: 2022.4.4
     helm:
       parameters:
         - name: certsSecret.autoGenerate

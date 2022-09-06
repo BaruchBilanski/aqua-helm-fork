@@ -4,10 +4,10 @@ metadata:
   name: aqua-enforcer
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-annotations:
-  argocd-image-updater.argoproj.io/image-list: enforcer=registry.aquasec.com/enforcer:~2022.4
-  argocd-image-updater.argoproj.io/myalias.force-update: "true"
-  argocd-image-updater.argoproj.io/enforcer.update-strategy: semver
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: enforcer=registry.aquasec.com/enforcer:~2022.4
+    argocd-image-updater.argoproj.io/myalias.force-update: "true"
+    argocd-image-updater.argoproj.io/enforcer.update-strategy: semver
 spec:
   project: aqua
   source:
@@ -24,7 +24,6 @@ spec:
           value: k8s
         - name: image.tag
           value: 2022.4.71
-
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: aqua

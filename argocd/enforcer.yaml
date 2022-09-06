@@ -6,8 +6,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
   annotations:
     argocd-image-updater.argoproj.io/image-list: registry.aquasec.com/enforcer:~2022.4
-    argocd-image-updater.argoproj.io/enforcer.force-update: "true"
-    argocd-image-updater.argoproj.io/enforcer.update-strategy: semver
+    argocd-image-updater.argoproj.io/registry.aquasec.com/enforcer.force-update: "true"
+    argocd-image-updater.argoproj.io/registry.aquasec.com/enforcer.update-strategy: semver
 spec:
   project: aqua
   source:

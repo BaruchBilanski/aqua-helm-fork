@@ -4,6 +4,8 @@ metadata:
   name: aqua-enforcer
   finalizers:
     - resources-finalizer.argocd.argoproj.io
+annotations:
+  argocd-image-updater.argoproj.io/image-list: registry.aquasec.com/enforcer:~2022.4
 spec:
   project: aqua
   source:

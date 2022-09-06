@@ -16,7 +16,7 @@ spec:
       parameters:
         - name: global.gateway.address
           value: server-gateway-svc.aqua
-        - name: global.gateway..port
+        - name: global.gateway.port
           value: '8443'
         - name: platform
           value: k8s

@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://helm.aquasec.com/'
     chart: enforcer
-    targetRevision: 2022.4
+    targetRevision: 2022.4.5
     helm:
       parameters:
         - name: gate.host

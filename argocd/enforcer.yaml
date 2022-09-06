@@ -20,8 +20,6 @@ spec:
           value: k8s
         - name: image.tag
           value: 2022.4.71
-        - name: serviceaccount.create
-          value: true
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: aqua

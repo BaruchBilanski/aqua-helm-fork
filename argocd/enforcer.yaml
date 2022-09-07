@@ -17,7 +17,7 @@ spec:
     repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
     chart: enforcer
 #    targetRevision: 2022.4.4
-    targetRevision: tree/argocd-test
+    targetRevision: argocd-test
     helm:
       parameters:
         - name: global.gateway.address

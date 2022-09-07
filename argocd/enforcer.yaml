@@ -8,14 +8,16 @@ metadata:
     argocd-image-updater.argoproj.io/image-list: enforcer=registry.aquasec.com/enforcer:~2022.4
     argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/git-creds
     argocd-image-updater.argoproj.io/git-branch: argocd-test
-#    argocd-image-updater.argoproj.io/enforcer.force-update: 'true'
+    argocd-image-updater.argoproj.io/argocd.force-update: true
 #    argocd-image-updater.argoproj.io/enforcer.dry-run: 'false'
 spec:
   project: aqua
   source:
-    repoURL: 'https://helm.aquasec.com/'
+#    repoURL: 'https://helm.aquasec.com/'
+    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
     chart: enforcer
-    targetRevision: 2022.4.4
+#    targetRevision: 2022.4.4
+    targetRevision: argocd-test
     helm:
       parameters:
         - name: global.gateway.address

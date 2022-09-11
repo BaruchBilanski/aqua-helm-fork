@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork.git'
     targetRevision: 'argocd-test'
-    path: "eforcer"
+    path: "enforcer"
     helm:
       parameters:
         - name: global.gateway.address

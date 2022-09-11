@@ -12,7 +12,7 @@ spec:
     helm:
       chart: "server"
       repoURL: 'https://helm.aquasec.com/'
-      targetRevision: '2022.4'
+      chartVersion: '2022.4'
       parameters:
         - name: global.platform
           value: k8s

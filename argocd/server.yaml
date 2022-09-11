@@ -11,9 +11,6 @@ spec:
     targetRevision: 'argocd-test'
     path: "server"
     helm:
-      chart: "server"
-      repoURL: 'https://helm.aquasec.com/'
-      chartVersion: '2022.4'
       parameters:
         - name: global.platform
           value: k8s

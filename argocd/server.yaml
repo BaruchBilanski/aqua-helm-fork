@@ -7,7 +7,7 @@ metadata:
 spec:
   project: aqua
   source:
-    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
+    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork.git'
     chart: server
     targetRevision: 'argocd-test'
     helm:

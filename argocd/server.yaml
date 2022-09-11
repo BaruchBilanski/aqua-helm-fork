@@ -7,9 +7,9 @@ metadata:
 spec:
   project: aqua
   source:
-    repoURL: 'https://helm.aquasec.com/'
+    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
     chart: server
-    targetRevision: 2022.4.4
+    targetRevision: 'argocd-test'
     helm:
       parameters:
         - name: global.platform

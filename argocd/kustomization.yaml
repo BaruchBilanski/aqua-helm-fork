@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - enforcer.yaml
-  #- server.yaml
+  - server.yaml
   #- kube-enforcer.yaml

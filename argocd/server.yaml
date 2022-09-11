@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork.git'
     targetRevision: 'argocd-test'
-    path: ""
+    path: "argocd"
     helm:
       chart: "server"
       repoURL: 'https://helm.aquasec.com/'

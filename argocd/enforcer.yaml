@@ -14,7 +14,7 @@ spec:
   project: aqua
   source:
 #    repoURL: 'https://helm.aquasec.com/'
-    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork'
+    repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork.git'
     chart: enforcer
 #    targetRevision: 2022.4.4
     targetRevision: "argocd-test"

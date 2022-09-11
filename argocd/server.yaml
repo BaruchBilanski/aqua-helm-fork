@@ -9,8 +9,8 @@ spec:
   source:
     repoURL: 'https://github.com/BaruchBilanski/aqua-helm-fork.git'
     targetRevision: 'argocd-test'
-    path: 'argocd'
     helm:
+      chart: "server"
       repoURL: 'https://helm.aquasec.com/'
       targetRevision: '2022.4'
       parameters:
